@@ -175,7 +175,7 @@
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
+      grid-template-columns: repeat(3, 1fr);
       gap: 18px;
     }
 
@@ -212,50 +212,6 @@
       margin: 0;
       color: var(--muted);
       font-size: 0.92rem;
-    }
-
-    .previous-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 18px;
-    }
-
-    .previous-card {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 250px;
-      padding: 22px;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      background: #fff;
-      text-decoration: none;
-      transition: transform 160ms ease, border-color 160ms ease;
-    }
-
-    .previous-card:hover {
-      transform: translateY(-4px);
-      border-color: #b6bdab;
-    }
-
-    .previous-card h3 {
-      margin: 16px 0 10px;
-      font-size: 1.4rem;
-      letter-spacing: -0.04em;
-    }
-
-    .previous-card p {
-      margin: 0;
-      color: var(--muted);
-      font-size: 0.92rem;
-    }
-
-    .previous-card ul {
-      margin: 18px 0 0;
-      padding-left: 18px;
-      color: var(--muted);
-      font-size: 0.82rem;
-      line-height: 1.8;
     }
 
     .about {
@@ -352,13 +308,11 @@
         gap: 8px;
       }
 
-      .projects,
-      .previous-grid {
+      .projects {
         grid-template-columns: 1fr;
       }
 
-      .project,
-      .previous-card {
+      .project {
         min-height: 205px;
       }
 
@@ -392,7 +346,6 @@
       <a class="brand" href="#home">Kyle Reinhardt</a>
       <nav aria-label="Main navigation">
         <a href="#work">Work</a>
-        <a href="#previous-projects">Previous</a>
         <a href="#about">About</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -412,7 +365,7 @@
       <section id="work" aria-labelledby="work-title">
         <div class="section-heading">
           <h2 id="work-title">Selected work</h2>
-          <p class="section-note">A few recent examples</p>
+          <p class="section-note">A few things I’ve made recently</p>
         </div>
         <div class="projects">
           <a class="project" href="https://github.com/Kyle-SX/Badge-Printer" target="_blank" rel="noreferrer noopener">
@@ -428,40 +381,6 @@
               <h3>GitHub Profile</h3>
               <p>More public work, experiments, and development activity across my projects.</p>
             </div>
-          </a>
-        </div>
-      </section>
-
-      <section id="previous-projects" aria-labelledby="previous-projects-title">
-        <div class="section-heading">
-          <h2 id="previous-projects-title">Previous projects</h2>
-          <p class="section-note">Public work I’ve built</p>
-        </div>
-        <div class="previous-grid">
-          <a class="previous-card" href="https://github.com/Kyle-SX/Badge-Printer" target="_blank" rel="noreferrer noopener">
-            <div>
-              <span class="project-number">2026 / Python project</span>
-              <h3>Badge-Printer</h3>
-              <p>A practical automation project focused on badge generation and streamlined printing workflows.</p>
-            </div>
-            <ul>
-              <li>Automation-first approach</li>
-              <li>Improved workflow consistency</li>
-              <li>Reusable script logic</li>
-            </ul>
-          </a>
-
-          <a class="previous-card" href="https://github.com/Kyle-SX" target="_blank" rel="noreferrer noopener">
-            <div>
-              <span class="project-number">2026 / GitHub activity</span>
-              <h3>Public Projects</h3>
-              <p>Ongoing work and experiment tracking across public projects and personal development work.</p>
-            </div>
-            <ul>
-              <li>Continuous learning</li>
-              <li>Open project work</li>
-              <li>Version-controlled progress</li>
-            </ul>
           </a>
         </div>
       </section>
@@ -489,7 +408,7 @@
           <h2 id="contact-title">Let’s make it happen.</h2>
           <p>I’m always happy to talk about new ideas, interesting projects, or your favorite coffee spot.</p>
         </div>
-        <a class="button" href="mailto:hello@example.com">Say hello <span aria-hidden="true">&nbsp;↗</span></a>
+        <a class="button" href="mailto:kyle.reinhardt1255@gmail.com">Say hello <span aria-hidden="true">&nbsp;↗</span></a>
       </section>
     </main>
 
